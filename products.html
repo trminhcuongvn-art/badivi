@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Best Practices -->
+  <title>Danh Mục Sản Phẩm Băng Dính & Màng PE BaDiVi | Product Catalog</title>
+  <meta name="description" content="Khám phá toàn bộ 21 dòng sản phẩm băng dính đóng gói, băng keo kỹ thuật, cách điện, phản quang, màng co nhiệt và màng PE bảo vệ bề mặt của BaDiVi.">
+  <meta name="keywords" content="badivi catalog, bang keo opp, bang dinh dien pvc, mang pe quan pallet, xop hoi bong bong khí">
+  <meta name="robots" content="index, follow">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header Navigation -->
+  <header class="header scrolled" id="header">
+    <div class="container header-container">
+      <a href="index.html" class="logo-wrapper">
+        <img src="images/logo.png" alt="BaDiVi Logo" class="logo-img" id="logo-img">
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="nav-menu">
+        <a href="index.html" class="nav-link" data-i18n="nav-home">Trang Chủ</a>
+        <a href="about.html" class="nav-link" data-i18n="nav-about">Giới Thiệu</a>
+        <a href="products.html" class="nav-link active" data-i18n="nav-products">Sản Phẩm</a>
+        <a href="contact.html" class="nav-link" data-i18n="nav-contact">Liên Hệ</a>
+      </nav>
+
+      <!-- Controls & Actions -->
+      <div class="header-controls">
+        <!-- Language Switcher -->
+        <div class="lang-switcher">
+          <button class="lang-btn active" data-lang="vi" onclick="setLanguage('vi')">VI</button>
+          <button class="lang-btn" data-lang="en" onclick="setLanguage('en')">EN</button>
+          <button class="lang-btn" data-lang="zh" onclick="setLanguage('zh')">ZH</button>
+        </div>
+
+        <!-- Quick phone support -->
+        <div class="contact-quick">
+          <svg viewBox="0 0 24 24">
+            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+          </svg>
+          <div>
+            <span style="font-size: 0.75rem; display: block; color: var(--gray);" data-i18n="quick-call">Hỗ trợ 24/7:</span>
+            <a href="tel:0377689866" style="font-size: 0.95rem; color: var(--primary);">0377 689 866</a>
+          </div>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-nav-toggle" id="mobile-nav-toggle">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Title section -->
+  <section class="section section-bg" style="padding-top: 140px; padding-bottom: 50px;">
+    <div class="container text-center">
+      <h1 class="section-title" data-i18n="catalog-title" style="margin-bottom: 10px;">Danh Mục Sản Phẩm BaDiVi</h1>
+      <p class="section-subtitle" data-i18n="catalog-subtitle">Hệ thống sản phẩm kết dính đa dạng phục vụ đóng gói, công nghiệp và bảo vệ bề mặt</p>
+    </div>
+  </section>
+
+  <!-- Product Catalog Filters and Grid -->
+  <section class="section" style="padding-top: 30px;">
+    <div class="container">
+      
+      <!-- Search & Filters Container -->
+      <div class="catalog-controls">
+        <div class="search-filter-wrapper">
+          
+          <!-- Search box -->
+          <div class="search-box">
+            <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" id="catalog-search" class="search-input" placeholder="Tìm kiếm sản phẩm..." data-i18n="search-placeholder">
+          </div>
+
+          <!-- Category filter tabs -->
+          <div class="tabs-wrapper">
+            <button class="tab-btn active" data-tab="all" data-i18n="tab-all">Tất Cả</button>
+            <button class="tab-btn" data-tab="bopp" data-i18n="tab-bopp">Băng Dính Đóng Gói</button>
+            <button class="tab-btn" data-tab="industrial" data-i18n="tab-industrial">Băng Dính Kỹ Thuật</button>
+            <button class="tab-btn" data-tab="specialty" data-i18n="tab-specialty">Băng Dính 2 Mặt / Đặc Thù</button>
+            <button class="tab-btn" data-tab="films" data-i18n="tab-films">Màng PE & Bảo Vệ</button>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="products-grid" id="catalog-products-grid">
+        <!-- populated dynamically via renderProducts() in main.js/here -->
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- Unified Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <!-- Col 1: About company -->
+      <div class="footer-col-about">
+        <h3>BaDiVi</h3>
+        <p data-i18n="foot-desc">Công ty BaDiVi chuyên sản xuất và phân phối các loại băng dính công nghiệp, băng keo đóng gói và màng bảo vệ bề mặt PE đạt chuẩn xuất khẩu.</p>
+        <div class="social-links">
+          <a href="#" class="social-btn">FB</a>
+          <a href="#" class="social-btn">LN</a>
+          <a href="#" class="social-btn">YT</a>
+        </div>
+      </div>
+
+      <!-- Col 2: Quick Links -->
+      <div>
+        <h4 class="footer-title" data-i18n="foot-quick">Liên Kết Nhanh</h4>
+        <div class="footer-links">
+          <a href="index.html" class="footer-link" data-i18n="nav-home">Trang Chủ</a>
+          <a href="about.html" class="footer-link" data-i18n="nav-about">Giới Thiệu</a>
+          <a href="products.html" class="footer-link" data-i18n="nav-products">Sản Phẩm</a>
+          <a href="contact.html" class="footer-link" data-i18n="nav-contact">Liên Hệ</a>
+        </div>
+      </div>
+
+      <!-- Col 3: Product Types -->
+      <div>
+        <h4 class="footer-title" data-i18n="foot-products">Dòng Sản Phẩm</h4>
+        <div class="footer-links">
+          <a href="products.html?cat=bopp" class="footer-link" data-i18n="tab-bopp">Băng Dính Đóng Gói</a>
+          <a href="products.html?cat=industrial" class="footer-link" data-i18n="tab-industrial">Băng Dính Kỹ Thuật</a>
+          <a href="products.html?cat=specialty" class="footer-link" data-i18n="tab-specialty">Băng Dính Đặc Thù</a>
+          <a href="products.html?cat=films" class="footer-link" data-i18n="tab-films">Màng PE & Bảo Vệ</a>
+        </div>
+      </div>
+
+      <!-- Col 4: Contacts details -->
+      <div>
+        <h4 class="footer-title" data-i18n="info-title">Thông Tin Liên Hệ</h4>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          <span data-i18n="info-addr-desc">Hồng Thái - An Dương - Hải Phòng</span>
+        </div>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+          <span>0377 689 866</span>
+        </div>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          <span>info@badivi.vn</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container footer-bottom">
+      <span data-i18n="foot-copy">© 2026 BaDiVi. Tất cả quyền được bảo lưu. Thiết kế bởi Antigravity.</span>
+      <div class="lang-switcher" style="background-color: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.1);">
+        <button class="lang-btn active" data-lang="vi" onclick="setLanguage('vi')">VI</button>
+        <button class="lang-btn" data-lang="en" onclick="setLanguage('en')">EN</button>
+        <button class="lang-btn" data-lang="zh" onclick="setLanguage('zh')">ZH</button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Product Specifications Detail Modal (Hidden by default) -->
+  <div class="modal" id="product-detail-modal">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeProductModal()">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      
+      <h3 class="modal-title">Băng dính OPP</h3>
+      <span class="modal-category-badge">Băng Dính Đóng Gói</span>
+      
+      <div class="modal-grid">
+        <div class="modal-img-wrapper">
+          <img src="images/products.png" alt="Product detail view" class="modal-img">
+        </div>
+        <div>
+          <h4 class="modal-section-title" data-i18n="modal-spec-title">Thông Số Kỹ Thuật</h4>
+          
+          <table class="specs-table">
+            <tbody>
+              <!-- Populate dynamically via JS -->
+            </tbody>
+          </table>
+          
+          <button class="btn btn-secondary modal-quote-btn" style="width: 100%;" data-i18n="modal-btn-quote">Liên Hệ Báo Giá Sản Phẩm Này</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script>
+    // State variables for filter
+    let activeTab = "all";
+    let searchQuery = "";
+
+    // Product rendering on catalog page
+    function renderProducts() {
+      const grid = document.getElementById("catalog-products-grid");
+      if (!grid) return;
+
+      const filtered = products.filter(product => {
+        // Tab check
+        const matchTab = activeTab === "all" || product.category === activeTab;
+        
+        // Search query check
+        const details = product[currentLang];
+        const nameMatch = details.name.toLowerCase().includes(searchQuery.toLowerCase());
+        const teaserMatch = details.teaser.toLowerCase().includes(searchQuery.toLowerCase());
+        const matchSearch = searchQuery === "" || nameMatch || teaserMatch;
+        
+        return matchTab && matchSearch;
+      });
+
+      let html = "";
+      if (filtered.length === 0) {
+        html = `<div style="grid-column: span 4; text-align: center; padding: 60px 0; color: var(--gray);">No products found matching the criteria.</div>`;
+      } else {
+        filtered.forEach(product => {
+          const details = product[currentLang];
+          html += `
+            <div class="product-card">
+              <div class="product-img-wrapper">
+                <span class="product-badge">${product.badge[currentLang]}</span>
+                <img src="${product.image}" alt="${details.name}" class="product-img">
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">${details.name}</h3>
+                <p class="product-desc-teaser">${details.teaser}</p>
+                <div class="product-action">
+                  <button onclick="openProductModal('${product.id}')" class="btn btn-outline" style="width:100%;" data-i18n="hero-cta-catalog">Xem Chi Tiết</button>
+                </div>
+              </div>
+            </div>
+          `;
+        });
+      }
+
+      grid.innerHTML = html;
+      
+      // Translate dynamic buttons inside
+      grid.querySelectorAll("[data-i18n]").forEach(elem => {
+        const key = elem.getAttribute("data-i18n");
+        if (translations[currentLang][key]) {
+          elem.innerText = translations[currentLang][key];
+        }
+      });
+    }
+
+    // Attach local events
+    document.addEventListener("DOMContentLoaded", () => {
+      // Check query parameter for category from home footer
+      const params = new URLSearchParams(window.location.search);
+      const catParam = params.get("cat");
+      if (catParam) {
+        activeTab = catParam;
+        // Highlight active tab
+        document.querySelectorAll(".tab-btn").forEach(btn => {
+          if (btn.getAttribute("data-tab") === catParam) {
+            btn.classList.add("active");
+          } else {
+            btn.classList.remove("active");
+          }
+        });
+      }
+
+      renderProducts();
+
+      // Search input change
+      const searchInput = document.getElementById("catalog-search");
+      searchInput.addEventListener("input", (e) => {
+        searchQuery = e.target.value;
+        renderProducts();
+      });
+
+      // Tab clicks
+      const tabs = document.querySelectorAll(".tab-btn");
+      tabs.forEach(tab => {
+        tab.addEventListener("click", () => {
+          tabs.forEach(t => t.classList.remove("active"));
+          tab.classList.add("active");
+          
+          activeTab = tab.getAttribute("data-tab");
+          renderProducts();
+        });
+      });
+    });
+  </script>
+
+  <!-- Floating Zalo Button -->
+  <a href="https://zalo.me/0377689866" target="_blank" class="zalo-float" title="Liên hệ qua Zalo">
+    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 2C6.47715 2 2 5.80558 2 10.5C2 13.084 3.37203 15.3853 5.49629 16.8839L4.5 20.5C4.3855 20.9164 4.85196 21.2405 5.18432 20.9904L8.14088 18.7656C9.34914 18.9856 10.6393 19.1 12 19.1C17.5228 19.1 22 15.2944 22 10.6C22 5.90558 17.5228 2 12 2Z" fill="white"/>
+      <text x="6" y="14" fill="#0068ff" font-size="7" font-weight="900" font-family="Arial, sans-serif">Zalo</text>
+    </svg>
+  </a>
+</body>
+</html>
