@@ -1,353 +1,597 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- SEO Best Practices -->
-  <title>BaDiVi - Băng Dính & Màng Bảo Vệ Chuyên Nghiệp | Premium Adhesive Tapes</title>
-  <meta name="description" content="BaDiVi chuyên sản xuất và cung ứng các giải pháp băng dính đóng gói BOPP, băng keo kỹ thuật, băng dính in logo, màng quấn PE và màng co nhiệt chất lượng cao.">
-  <meta name="keywords" content="badivi, bang dinh badivi, bang keo viet nam, bang keo dong goi, mang pe, catalogue viet han">
-  <meta name="robots" content="index, follow">
-  
-  <!-- CSS Stylesheets -->
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-
-  <!-- Header Navigation -->
-  <header class="header" id="header">
-    <div class="container header-container">
-      <a href="index.html" class="logo-wrapper">
-        <img src="images/logo.png" alt="BaDiVi Logo" class="logo-img" id="logo-img">
-      </a>
-
-      <!-- Desktop Navigation Menu -->
-      <nav class="nav-menu" id="nav-menu">
-        <a href="index.html" class="nav-link active" data-i18n="nav-home">Trang Chủ</a>
-        <a href="about.html" class="nav-link" data-i18n="nav-about">Giới Thiệu</a>
-        <a href="products.html" class="nav-link" data-i18n="nav-products">Sản Phẩm</a>
-        <a href="contact.html" class="nav-link" data-i18n="nav-contact">Liên Hệ</a>
-      </nav>
-
-      <!-- Controls & Actions -->
-      <div class="header-controls">
-        <!-- Language Switcher -->
-        <div class="lang-switcher">
-          <button class="lang-btn active" data-lang="vi" onclick="setLanguage('vi')">VI</button>
-          <button class="lang-btn" data-lang="en" onclick="setLanguage('en')">EN</button>
-          <button class="lang-btn" data-lang="zh" onclick="setLanguage('zh')">ZH</button>
-        </div>
-
-        <!-- Quick phone support -->
-        <div class="contact-quick">
-          <svg viewBox="0 0 24 24">
-            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
-          </svg>
-          <div>
-            <span style="font-size: 0.75rem; display: block; color: var(--gray);" data-i18n="quick-call">Hỗ trợ 24/7:</span>
-            <a href="tel:0377689866" style="font-size: 0.95rem; color: var(--primary);">0377 689 866</a>
-          </div>
-        </div>
-
-        <!-- Mobile Menu Toggle Button -->
-        <button class="mobile-nav-toggle" id="mobile-nav-toggle">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
-          </svg>
-        </button>
-      </div>
-    </div>
-  </header>
-
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="container hero-grid">
-      <div class="hero-content animate-on-scroll">
-        <h1 class="hero-title" id="hero-title" data-i18n="hero-title-main">
-          Giải Pháp Băng Dính <span>Chuyên Nghiệp</span> Cho Doanh Nghiệp
-        </h1>
-        <p class="hero-desc" id="hero-desc" data-i18n="hero-desc-main">
-          BaDiVi cung cấp các giải pháp kết dính công nghiệp chất lượng cao, màng bảo vệ và màng co nhiệt đa dạng, tối ưu hóa quy trình đóng gói và bảo vệ sản phẩm tốt nhất.
-        </p>
-        <div class="hero-btns">
-          <a href="products.html" class="btn btn-secondary" data-i18n="hero-cta-catalog">Xem Sản Phẩm</a>
-          <button onclick="openQuoteRequest()" class="btn btn-white" data-i18n="hero-cta-quote">Yêu Cầu Báo Giá</button>
-        </div>
-      </div>
-      <div class="hero-image-wrapper animate-on-scroll">
-        <div class="hero-image">
-          <img src="images/hero.png" alt="BaDiVi modern adhesive tape manufacturing plant">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Feature Highlights -->
-  <section class="section section-bg">
-    <div class="container">
-      <div class="features-grid">
-        <!-- Feature 1 -->
-        <div class="feature-card animate-on-scroll">
-          <div class="feature-icon">🏅</div>
-          <h3 class="feature-title" data-i18n="feat-quality-title">Chất Lượng Vượt Trội</h3>
-          <p class="feature-desc" data-i18n="feat-quality-desc">Sử dụng nhựa nguyên sinh và hệ keo acrylic, cao su tự nhiên cao cấp chịu lực, chịu nhiệt vượt trội.</p>
-        </div>
-        <!-- Feature 2 -->
-        <div class="feature-card animate-on-scroll" style="animation-delay: 0.1s;">
-          <div class="feature-icon">🎨</div>
-          <h3 class="feature-title" data-i18n="feat-custom-title">Thiết Kế In Logo</h3>
-          <p class="feature-desc" data-i18n="feat-custom-desc">Tùy biến in thương hiệu trực tiếp lên băng dính với độ sắc nét cao giúp quảng bá nhãn hàng tối ưu.</p>
-        </div>
-        <!-- Feature 3 -->
-        <div class="feature-card animate-on-scroll" style="animation-delay: 0.2s;">
-          <div class="feature-icon">⚙️</div>
-          <h3 class="feature-title" data-i18n="feat-tech-title">Sản Xuất Hiện Đại</h3>
-          <p class="feature-desc" data-i18n="feat-tech-desc">Hệ thống nhà máy vận hành tự động, công suất hàng chục tấn/ngày đáp ứng các đơn hàng quy mô.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- About Teaser -->
-  <section class="section">
-    <div class="container about-teaser-grid">
-      <div class="about-teaser-img-wrapper animate-on-scroll">
-        <img src="images/products.png" alt="BaDiVi tape product assortment" class="about-teaser-img">
-        <div class="about-teaser-experience">
-          <span class="years">15+</span>
-          <span class="text">Năm phát triển</span>
-        </div>
-      </div>
-      <div class="about-teaser-content animate-on-scroll" style="animation-delay: 0.2s;">
-        <h2 class="about-teaser-title" data-i18n="teaser-title">Về Chúng Tôi - Băng Dính BaDiVi</h2>
-        <p class="about-teaser-desc" data-i18n="teaser-desc">
-          Công ty BaDiVi (Băng Dính Việt) là nhà sản xuất hàng đầu trong lĩnh vực sản xuất băng dính kỹ thuật, băng dính đóng gói và màng bảo vệ bề mặt PE chất lượng cao. Với máy móc hiện đại và công nghệ tiên tiến, chúng tôi cam kết mang lại sản phẩm đạt chuẩn quốc tế cùng chi phí tối ưu nhất.
-        </p>
-        <div class="about-teaser-highlights">
-          <div class="teaser-highlight-item">
-            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-            <span data-i18n="teaser-feat-1">Nhà máy khép kín</span>
-          </div>
-          <div class="teaser-highlight-item">
-            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-            <span data-i18n="teaser-feat-2">Độ bám dính siêu việt</span>
-          </div>
-          <div class="teaser-highlight-item">
-            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-            <span data-i18n="teaser-feat-3">Trực tiếp sản xuất</span>
-          </div>
-          <div class="teaser-highlight-item">
-            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-            <span data-i18n="teaser-feat-4">Giao hàng nhanh toàn quốc</span>
-          </div>
-        </div>
-        <a href="about.html" class="btn btn-outline" data-i18n="teaser-more">Đọc Thêm Về Chúng Tôi</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Statistics Counters -->
-  <section class="stats">
-    <div class="container stats-grid">
-      <div class="stat-item animate-on-scroll">
-        <div class="stat-number">15+</div>
-        <div class="stat-label" data-i18n="stats-experience">Năm Kinh Nghiệm</div>
-      </div>
-      <div class="stat-item animate-on-scroll" style="animation-delay: 0.1s;">
-        <div class="stat-number">5000+</div>
-        <div class="stat-label" data-i18n="stats-capacity">Tấn/Năm Công Suất</div>
-      </div>
-      <div class="stat-item animate-on-scroll" style="animation-delay: 0.2s;">
-        <div class="stat-number">200+</div>
-        <div class="stat-label" data-i18n="stats-partners">Đối Tác Lớn</div>
-      </div>
-      <div class="stat-item animate-on-scroll" style="animation-delay: 0.3s;">
-        <div class="stat-number">99.8%</div>
-        <div class="stat-label" data-i18n="stats-satisfaction">Khách Hàng Hài Lòng</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Featured Products Slider/Grid -->
-  <section class="section section-bg">
-    <div class="container">
-      <div class="section-title-wrapper animate-on-scroll">
-        <h2 class="section-title" data-i18n="featured-title">Sản Phẩm Nổi Bật</h2>
-        <p class="section-subtitle" data-i18n="featured-subtitle">Khám phá các sản phẩm kết dính đóng gói và bảo vệ công nghiệp bán chạy nhất của BaDiVi</p>
-      </div>
-
-      <!-- Grid of 4 bestselling items -->
-      <div class="products-grid" id="featured-products-grid">
-        <!-- Will be rendered dynamically via main.js -->
-      </div>
-
-      <div style="text-align: center; margin-top: 50px;" class="animate-on-scroll">
-        <a href="products.html" class="btn btn-primary" data-i18n="featured-more">Xem Toàn Bộ Danh Mục</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Call to Action Banner -->
-  <section class="cta">
-    <div class="container animate-on-scroll">
-      <h2 class="cta-title" data-i18n="cta-title">Bạn Cần Sản Phẩm Băng Dính Theo Yêu Cầu Riêng?</h2>
-      <p class="cta-desc" data-i18n="cta-desc">Chúng tôi sản xuất băng dính in logo, cắt cuộn theo bản rộng/độ dày mong muốn của khách hàng với chi phí xuất xưởng cạnh tranh nhất.</p>
-      <button onclick="openQuoteRequest()" class="btn btn-white" data-i18n="cta-btn">Nhận Tư Vấn Miễn Phí</button>
-    </div>
-  </section>
-
-  <!-- Unified Footer -->
-  <footer class="footer">
-    <div class="container footer-grid">
-      <!-- Col 1: About company -->
-      <div class="footer-col-about">
-        <h3>BaDiVi</h3>
-        <p data-i18n="foot-desc">Công ty BaDiVi chuyên sản xuất và phân phối các loại băng dính công nghiệp, băng keo đóng gói và màng bảo vệ bề mặt PE đạt chuẩn xuất khẩu.</p>
-        <div class="social-links">
-          <a href="#" class="social-btn">FB</a>
-          <a href="#" class="social-btn">LN</a>
-          <a href="#" class="social-btn">YT</a>
-        </div>
-      </div>
-
-      <!-- Col 2: Quick Links -->
-      <div>
-        <h4 class="footer-title" data-i18n="foot-quick">Liên Kết Nhanh</h4>
-        <div class="footer-links">
-          <a href="index.html" class="footer-link" data-i18n="nav-home">Trang Chủ</a>
-          <a href="about.html" class="footer-link" data-i18n="nav-about">Giới Thiệu</a>
-          <a href="products.html" class="footer-link" data-i18n="nav-products">Sản Phẩm</a>
-          <a href="contact.html" class="footer-link" data-i18n="nav-contact">Liên Hệ</a>
-        </div>
-      </div>
-
-      <!-- Col 3: Product Types -->
-      <div>
-        <h4 class="footer-title" data-i18n="foot-products">Dòng Sản Phẩm</h4>
-        <div class="footer-links">
-          <a href="products.html?cat=bopp" class="footer-link" data-i18n="tab-bopp">Băng Dính Đóng Gói</a>
-          <a href="products.html?cat=industrial" class="footer-link" data-i18n="tab-industrial">Băng Dính Kỹ Thuật</a>
-          <a href="products.html?cat=specialty" class="footer-link" data-i18n="tab-specialty">Băng Dính Đặc Thù</a>
-          <a href="products.html?cat=films" class="footer-link" data-i18n="tab-films">Màng PE & Bảo Vệ</a>
-        </div>
-      </div>
-
-      <!-- Col 4: Contacts details -->
-      <div>
-        <h4 class="footer-title" data-i18n="info-title">Thông Tin Liên Hệ</h4>
-        <div class="footer-contact-item">
-          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-          <span data-i18n="info-addr-desc">Hồng Thái - An Dương - Hải Phòng</span>
-        </div>
-        <div class="footer-contact-item">
-          <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
-          <span>0377 689 866</span>
-        </div>
-        <div class="footer-contact-item">
-          <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-          <span>info@badivi.vn</span>
-        </div>
-      </div>
-    </div>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="metaTitle">MultiTools Hub - Free Multilingual Online Web Utilities</title>
+    <meta name="description" content="Free online tools to download TikTok videos, compress images, generate secure passwords, and convert text case. Multilingual and secure client-side tools." data-i18n-content="metaDesc">
     
-    <div class="container footer-bottom">
-      <span data-i18n="foot-copy">© 2026 BaDiVi. Tất cả quyền được bảo lưu. Thiết kế bởi Antigravity.</span>
-      <div class="lang-switcher" style="background-color: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.1);">
-        <button class="lang-btn active" data-lang="vi" onclick="setLanguage('vi')">VI</button>
-        <button class="lang-btn" data-lang="en" onclick="setLanguage('en')">EN</button>
-        <button class="lang-btn" data-lang="zh" onclick="setLanguage('zh')">ZH</button>
-      </div>
-    </div>
-  </footer>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Main Style -->
+    <link rel="stylesheet" href="css/style.css">
 
-  <!-- Product Specifications Detail Modal (Hidden by default) -->
-  <div class="modal" id="product-detail-modal">
-    <div class="modal-content">
-      <button class="modal-close" onclick="closeProductModal()">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <line x1="18" y1="6" x2="6" y2="18"></line>
-          <line x1="6" y1="6" x2="18" y2="18"></line>
-        </svg>
-      </button>
-      
-      <h3 class="modal-title">Băng dính OPP</h3>
-      <span class="modal-category-badge">Băng Dính Đóng Gói</span>
-      
-      <div class="modal-grid">
-        <div class="modal-img-wrapper">
-          <img src="images/products.png" alt="Product detail view" class="modal-img">
-        </div>
-        <div>
-          <h4 class="modal-section-title" data-i18n="modal-spec-title">Thông Số Kỹ Thuật</h4>
-          
-          <table class="specs-table">
-            <tbody>
-              <!-- Populate dynamically via JS -->
-            </tbody>
-          </table>
-          
-          <button class="btn btn-secondary modal-quote-btn" style="width: 100%;" data-i18n="modal-btn-quote">Liên Hệ Báo Giá Sản Phẩm Này</button>
-        </div>
-      </div>
-    </div>
-  </div>
+    <!-- International SEO GEO (Hreflang tags) -->
+    <!-- NOTE: Replace 'https://multitoolshub.com' with your actual domain when deployed -->
+    <link rel="alternate" hreflang="x-default" href="https://multitoolshub.com/" />
+    <link rel="alternate" hreflang="en" href="https://multitoolshub.com/?lang=en" />
+    <link rel="alternate" hreflang="es" href="https://multitoolshub.com/?lang=es" />
+    <link rel="alternate" hreflang="pt" href="https://multitoolshub.com/?lang=pt" />
+    <link rel="alternate" hreflang="fr" href="https://multitoolshub.com/?lang=fr" />
+    <link rel="alternate" hreflang="vi" href="https://multitoolshub.com/?lang=vi" />
 
-  <!-- Main scripts -->
-  <script src="js/main.js"></script>
-  <script>
-    // Render 4 featured products on home page
-    function renderFeaturedProducts() {
-      const grid = document.getElementById("featured-products-grid");
-      if (!grid) return;
-      
-      // Select 4 bestsellers across categories: 1.1 (OPP), 1.4 (Printed logo), 1.6 (Floor marking), 2.1 (PE stretch)
-      const featuredIds = ["1.1", "1.4", "1.6", "2.1"];
-      const featuredList = products.filter(p => featuredIds.includes(p.id));
-      
-      let html = "";
-      featuredList.forEach(product => {
-        const details = product[currentLang];
-        html += `
-          <div class="product-card animate-on-scroll">
-            <div class="product-img-wrapper">
-              <span class="product-badge">${product.badge[currentLang]}</span>
-              <img src="${product.image}" alt="${details.name}" class="product-img">
-            </div>
-            <div class="product-info">
-              <h3 class="product-title">${details.name}</h3>
-              <p class="product-desc-teaser">${details.teaser}</p>
-              <div class="product-action">
-                <button onclick="openProductModal('${product.id}')" class="btn btn-outline" style="width:100%;" data-i18n="hero-cta-catalog">Xem Chi Tiết</button>
-              </div>
-            </div>
-          </div>
-        `;
-      });
-      
-      grid.innerHTML = html;
-      
-      // Re-translate inner elements that might contain data-i18n
-      grid.querySelectorAll("[data-i18n]").forEach(elem => {
-        const key = elem.getAttribute("data-i18n");
-        if (translations[currentLang][key]) {
-          elem.innerText = translations[currentLang][key];
-        }
-      });
+    <!-- Google Search Console translation setting (Prevents auto Google translation overlay) -->
+    <meta name="google" content="notranslate">
+
+    <!-- Schema.org WebApplication Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "MultiTools Hub",
+      "url": "https://multitoolshub.com",
+      "applicationCategory": "UtilityApplication",
+      "operatingSystem": "All",
+      "browserRequirements": "Requires JavaScript. Requires HTML5.",
+      "description": "Free multilingual web tools including TikTok downloader, image compressor, secure password generator, text converters, and QR code generator.",
+      "inLanguage": ["en", "es", "pt", "fr", "vi"]
     }
-    
-    // Initial call
-    document.addEventListener("DOMContentLoaded", () => {
-      renderFeaturedProducts();
-    });
-  </script>
+    </script>
+</head>
+<body class="dark-mode">
+    <div class="background-glows">
+        <div class="glow glow-1"></div>
+        <div class="glow glow-2"></div>
+    </div>
 
-  <!-- Floating Zalo Button -->
-  <a href="https://zalo.me/0377689866" target="_blank" class="zalo-float" title="Liên hệ qua Zalo">
-    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M12 2C6.47715 2 2 5.80558 2 10.5C2 13.084 3.37203 15.3853 5.49629 16.8839L4.5 20.5C4.3855 20.9164 4.85196 21.2405 5.18432 20.9904L8.14088 18.7656C9.34914 18.9856 10.6393 19.1 12 19.1C17.5228 19.1 22 15.2944 22 10.6C22 5.90558 17.5228 2 12 2Z" fill="white"/>
-      <text x="6" y="14" fill="#0068ff" font-size="7" font-weight="900" font-family="Arial, sans-serif">Zalo</text>
-    </svg>
-  </a>
+    <!-- Header Navigation -->
+    <header class="glass-nav">
+        <div class="nav-container">
+            <div class="brand" id="nav-brand">
+                <span class="logo-text" data-i18n="logo">MultiTools Hub</span>
+            </div>
+            
+            <nav class="nav-links">
+                <a href="#home" class="nav-item active" data-nav="home" data-i18n="home">Home</a>
+                <a href="#tiktok" class="nav-item" data-nav="tiktok" data-i18n="tiktokTitle">TikTok Downloader</a>
+                <a href="#image" class="nav-item" data-nav="image" data-i18n="imageTitle">Image Compressor</a>
+                <a href="#password" class="nav-item" data-nav="password" data-i18n="passwordTitle">Password Gen</a>
+                <a href="#text" class="nav-item" data-nav="text" data-i18n="textTitle">Text Tools</a>
+                <a href="#qrcode" class="nav-item" data-nav="qrcode" data-i18n="qrTitle">QR Code Gen</a>
+                <a href="#devtools" class="nav-item" data-nav="devtools" data-i18n="devToolsTitle">Dev Tools</a>
+            </nav>
+
+            <div class="nav-actions">
+                <!-- Theme Toggle Button -->
+                <button class="icon-btn" id="theme-toggle" aria-label="Toggle theme">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 9H3m15.364-3.364l-.707.707M6.343 17.657l-.707.707m0-12.728l.707.707m12.728 12.728l.707-.707M12 8a4 4 0 100 8 4 4 0 000-8z" />
+                    </svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                    </svg>
+                </button>
+
+                <!-- Language Switcher Selector -->
+                <div class="lang-select-wrapper">
+                    <select id="lang-select" aria-label="Select language">
+                        <option value="en">English</option>
+                        <option value="es">Español</option>
+                        <option value="pt">Português</option>
+                        <option value="fr">Français</option>
+                        <option value="vi">Tiếng Việt</option>
+                    </select>
+                    <div class="select-arrow"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Grid / Pages -->
+    <main class="main-container">
+        
+        <!-- ================= HOME PAGE ================= -->
+        <section id="page-home" class="page-section active">
+            <div class="hero-section">
+                <h1 class="gradient-text hero-title" data-i18n="heroTitle">Sleek, Fast & Free Online Tools</h1>
+                <p class="hero-desc" data-i18n="heroDesc">No installations, no registration, no tracking. Fast tools designed to save you time every day, running completely in your browser.</p>
+                <div class="search-bar-container">
+                    <div class="search-input-wrapper">
+                        <svg class="search-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                        <input type="text" id="tool-search" placeholder="Search tools..." data-i18n-placeholder="searchPlaceholder" autocomplete="off">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grid of Tools -->
+            <div class="tools-grid">
+                <!-- TikTok Downloader Card -->
+                <div class="tool-card" data-target="tiktok">
+                    <div class="card-icon icon-tiktok">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.02 1.59 4.23.83.96 1.94 1.63 3.16 1.94v3.83c-1.39-.07-2.76-.55-3.92-1.37-.15-.1-.29-.21-.44-.33v6.78c.06 1.5-.32 3.02-1.12 4.31-.96 1.52-2.47 2.65-4.19 3.12-1.7.49-3.56.36-5.18-.39-1.63-.73-2.98-2.07-3.7-3.72C-.17 14.88-.13 12.8.69 11.16c.86-1.74 2.45-3.07 4.38-3.62 1.48-.43 3.07-.33 4.49.26V11.7c-.89-.41-1.9-.5-2.82-.24-.96.25-1.81.9-2.32 1.76-.56.92-.72 2.06-.43 3.11.27.97.94 1.8 1.8 2.29.9.52 2 .59 2.95.21 1-.39 1.79-1.22 2.09-2.23.09-.34.13-.69.13-1.04V.02h.6z"/>
+                        </svg>
+                    </div>
+                    <h2 class="card-title" data-i18n="tiktokTitle">TikTok Video Downloader</h2>
+                    <p class="card-desc" data-i18n="tiktokDesc">Download TikTok videos without watermark in high quality (MP4) and extract MP3 audio files instantly.</p>
+                    <button class="btn btn-primary" data-i18n="useTool">Use Tool</button>
+                </div>
+
+                <!-- Image Compressor Card -->
+                <div class="tool-card" data-target="image">
+                    <div class="card-icon icon-image">
+                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <h2 class="card-title" data-i18n="imageTitle">Image Compressor & WebP Converter</h2>
+                    <p class="card-desc" data-i18n="imageDesc">Compress PNG, JPG, or WebP images locally to reduce file size up to 90% without losing quality.</p>
+                    <button class="btn btn-primary" data-i18n="useTool">Use Tool</button>
+                </div>
+
+                <!-- Password Generator Card -->
+                <div class="tool-card" data-target="password">
+                    <div class="card-icon icon-password">
+                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                        </svg>
+                    </div>
+                    <h2 class="card-title" data-i18n="passwordTitle">Secure Password Generator</h2>
+                    <p class="card-desc" data-i18n="passwordDesc">Create cryptographically secure, random passwords with customizable lengths and rules.</p>
+                    <button class="btn btn-primary" data-i18n="useTool">Use Tool</button>
+                </div>
+
+                <!-- Text Tools Card -->
+                <div class="tool-card" data-target="text">
+                    <div class="card-icon icon-text">
+                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        </svg>
+                    </div>
+                    <h2 class="card-title" data-i18n="textTitle">Text Case Converter & Repeater</h2>
+                    <p class="card-desc" data-i18n="textDesc">Quickly convert text cases (UPPER, lower, Title) and multiply or repeat text with custom separators.</p>
+                    <button class="btn btn-primary" data-i18n="useTool">Use Tool</button>
+                </div>
+
+                <!-- QR Code Generator Card -->
+                <div class="tool-card" data-target="qrcode">
+                    <div class="card-icon icon-qrcode">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h6v6H3V3zM15 3h6v6h-6V3zM3 15h6v6H3v-6zM15 15h3v3h-3v-3zM18 18h3v3h-3v-3zM21 15h-3v3h3v-3zM18 15h3v-3h-3v3zM15 18h3v3h-3v-3zM12 9h.01M9 12h.01M12 12h.01" />
+                        </svg>
+                    </div>
+                    <h2 class="card-title" data-i18n="qrTitle">QR Code Generator</h2>
+                    <p class="card-desc" data-i18n="qrDesc">Generate high-quality custom QR codes for URLs, text messages, or WiFi networks instantly.</p>
+                    <button class="btn btn-primary" data-i18n="useTool">Use Tool</button>
+                </div>
+
+                <!-- Developer Tools Card -->
+                <div class="tool-card" data-target="devtools">
+                    <div class="card-icon icon-devtools">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                        </svg>
+                    </div>
+                    <h2 class="card-title" data-i18n="devToolsTitle">Developer Utilities</h2>
+                    <p class="card-desc" data-i18n="devToolsDesc">Encode and decode Base64 strings, or escape and unescape URLs quickly and securely.</p>
+                    <button class="btn btn-primary" data-i18n="useTool">Use Tool</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= TIKTOK DOWNLOADER PAGE ================= -->
+        <section id="page-tiktok" class="page-section">
+            <button class="btn btn-secondary back-btn" data-i18n="backToHome">← Back to Home</button>
+            <div class="tool-container">
+                <div class="tool-header">
+                    <h1 class="gradient-text" data-i18n="tiktokTitle">TikTok Video Downloader</h1>
+                    <p class="tool-subtitle" data-i18n="tiktokDesc">Download TikTok videos without watermark in high quality (MP4) and extract MP3 audio files instantly.</p>
+                </div>
+                
+                <div class="tool-body">
+                    <form id="tiktok-form" class="url-form">
+                        <div class="input-wrapper">
+                            <input type="url" id="tiktok-url" placeholder="Paste TikTok video link here..." data-i18n-placeholder="tiktokPlaceholder" required autocomplete="off">
+                            <button type="submit" class="btn btn-gradient" id="tiktok-submit-btn" data-i18n="tiktokFetchBtn">Get Download Links</button>
+                        </div>
+                        <div id="tiktok-error" class="error-msg hide"></div>
+                    </form>
+
+                    <!-- Loading skeleton -->
+                    <div id="tiktok-loader" class="loader-container hide">
+                        <div class="spinner"></div>
+                        <p data-i18n="loading">Processing...</p>
+                    </div>
+
+                    <!-- Result layout -->
+                    <div id="tiktok-result" class="result-container hide">
+                        <h3 class="result-header" data-i18n="tiktokVideoInfo">Video Details</h3>
+                        <div class="tiktok-details-grid">
+                            <div class="video-preview-wrapper">
+                                <img id="tiktok-cover" src="" alt="Video Cover">
+                            </div>
+                            <div class="video-info-wrapper">
+                                <p id="tiktok-desc" class="video-description"></p>
+                                <p class="video-author"><strong data-i18n="tiktokAuthor">Author</strong>: <span id="tiktok-author-name"></span></p>
+                                
+                                <div class="download-buttons">
+                                    <a id="tiktok-dl-nowatermark" href="#" target="_blank" class="btn btn-success" data-i18n="tiktokNoWatermark">Download (No Watermark)</a>
+                                    <a id="tiktok-dl-watermark" href="#" target="_blank" class="btn btn-secondary" data-i18n="tiktokWatermark">Download (With Watermark)</a>
+                                    <a id="tiktok-dl-audio" href="#" target="_blank" class="btn btn-info" data-i18n="tiktokAudio">Download Audio (MP3)</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= IMAGE COMPRESSOR PAGE ================= -->
+        <section id="page-image" class="page-section">
+            <button class="btn btn-secondary back-btn" data-i18n="backToHome">← Back to Home</button>
+            <div class="tool-container">
+                <div class="tool-header">
+                    <h1 class="gradient-text" data-i18n="imageTitle">Image Compressor & WebP Converter</h1>
+                    <p class="tool-subtitle" data-i18n="imageDesc">Compress PNG, JPG, or WebP images locally to reduce file size up to 90% without losing quality.</p>
+                </div>
+
+                <div class="tool-body image-compressor-body">
+                    <!-- Drop Zone -->
+                    <div class="drag-drop-zone" id="img-drop-zone">
+                        <input type="file" id="img-input" accept="image/png, image/jpeg, image/webp" style="display: none;">
+                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="upload-icon">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+                        </svg>
+                        <p id="img-drop-text" data-i18n="imgDragDrop">Drag & drop image here, or click to browse</p>
+                    </div>
+
+                    <!-- Work Area -->
+                    <div id="img-work-area" class="work-area-container hide">
+                        <div class="image-preview-panel">
+                            <div class="preview-box">
+                                <img id="img-preview" src="" alt="Selected Preview">
+                            </div>
+                            <div class="info-table">
+                                <div class="info-row">
+                                    <span data-i18n="imgOriginal">Original Size</span>
+                                    <span id="img-orig-size" class="highlight-val">-</span>
+                                </div>
+                                <div class="info-row">
+                                    <span data-i18n="imgCompressed">Estimated Compressed Size</span>
+                                    <span id="img-comp-size" class="highlight-val">-</span>
+                                </div>
+                                <div class="info-row">
+                                    <span data-i18n="imgSavings">Storage Saved</span>
+                                    <span id="img-saved-pct" class="highlight-val text-green">-</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Controls Panel -->
+                        <div class="image-controls-panel">
+                            <div class="control-group">
+                                <label for="img-quality" class="control-label">
+                                    <span data-i18n="imgQuality">Compression Quality</span>
+                                    <span id="img-quality-val" class="badge-val">80%</span>
+                                </label>
+                                <input type="range" id="img-quality" min="10" max="100" value="80" class="slider">
+                            </div>
+
+                            <div class="control-group">
+                                <label for="img-format" class="control-label" data-i18n="imgFormat">Output Format</label>
+                                <div class="select-wrapper">
+                                    <select id="img-format">
+                                        <option value="image/webp">WebP (Recommended)</option>
+                                        <option value="image/jpeg">JPEG</option>
+                                        <option value="image/png">PNG</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <button id="img-download-btn" class="btn btn-gradient btn-full" data-i18n="imgDownload">Download Image</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PASSWORD GENERATOR PAGE ================= -->
+        <section id="page-password" class="page-section">
+            <button class="btn btn-secondary back-btn" data-i18n="backToHome">← Back to Home</button>
+            <div class="tool-container">
+                <div class="tool-header">
+                    <h1 class="gradient-text" data-i18n="passwordTitle">Secure Password Generator</h1>
+                    <p class="tool-subtitle" data-i18n="passwordDesc">Create cryptographically secure, random passwords with customizable lengths and rules.</p>
+                </div>
+
+                <div class="tool-body password-body">
+                    <!-- Password Output Box -->
+                    <div class="password-output-wrapper">
+                        <input type="text" id="pwd-output" readonly placeholder="Generated Password" data-i18n-placeholder="pwdGenerateBtn">
+                        <button class="btn btn-gradient" id="pwd-copy-btn">
+                            <span id="pwd-copy-text" data-i18n="copy">Copy</span>
+                        </button>
+                    </div>
+
+                    <!-- Options Grid -->
+                    <div class="password-options">
+                        <!-- Length slider -->
+                        <div class="control-group">
+                            <label for="pwd-length" class="control-label">
+                                <span data-i18n="pwdLength">Password Length</span>
+                                <span id="pwd-length-val" class="badge-val">16</span>
+                            </label>
+                            <input type="range" id="pwd-length" min="4" max="64" value="16" class="slider">
+                        </div>
+
+                        <!-- Checkboxes for complexity -->
+                        <div class="checkbox-options-grid">
+                            <label class="custom-checkbox">
+                                <input type="checkbox" id="pwd-upper" checked>
+                                <span class="checkmark"></span>
+                                <span data-i18n="pwdUpper">Include Uppercase Letters (A-Z)</span>
+                            </label>
+                            <label class="custom-checkbox">
+                                <input type="checkbox" id="pwd-lower" checked>
+                                <span class="checkmark"></span>
+                                <span data-i18n="pwdLower">Include Lowercase Letters (a-z)</span>
+                            </label>
+                            <label class="custom-checkbox">
+                                <input type="checkbox" id="pwd-numbers" checked>
+                                <span class="checkmark"></span>
+                                <span data-i18n="pwdNumbers">Include Numbers (0-9)</span>
+                            </label>
+                            <label class="custom-checkbox">
+                                <input type="checkbox" id="pwd-symbols" checked>
+                                <span class="checkmark"></span>
+                                <span data-i18n="pwdSymbols">Include Symbols (!@#$%)</span>
+                            </label>
+                        </div>
+
+                        <!-- Strength Meter -->
+                        <div class="pwd-strength-container">
+                            <div class="strength-labels">
+                                <span data-i18n="pwdStrength">Password Strength</span>
+                                <span id="pwd-strength-txt" class="strength-val-text text-green" data-i18n="pwdStrong">Strong</span>
+                            </div>
+                            <div class="strength-bar-bg">
+                                <div id="pwd-strength-bar" class="strength-bar-fill strong"></div>
+                            </div>
+                        </div>
+
+                        <button id="pwd-generate-btn" class="btn btn-primary btn-full" data-i18n="pwdGenerateBtn">Generate New Password</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= TEXT TOOLS PAGE ================= -->
+        <section id="page-text" class="page-section">
+            <button class="btn btn-secondary back-btn" data-i18n="backToHome">← Back to Home</button>
+            <div class="tool-container">
+                <div class="tool-header">
+                    <h1 class="gradient-text" data-i18n="textTitle">Text Case Converter & Repeater</h1>
+                    <p class="tool-subtitle" data-i18n="textDesc">Quickly convert text cases (UPPER, lower, Title) and multiply or repeat text with custom separators.</p>
+                </div>
+
+                <div class="tool-body text-body">
+                    <!-- Text Area Input -->
+                    <div class="text-input-container">
+                        <textarea id="txt-input" placeholder="Type or paste your text here..." data-i18n-placeholder="txtPlaceholder" rows="8"></textarea>
+                    </div>
+
+                    <!-- Statistics row -->
+                    <div class="text-stats-bar">
+                        <div class="stat-box">
+                            <span class="stat-label" data-i18n="txtWords">Words</span>
+                            <span id="txt-word-count" class="stat-count">0</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label" data-i18n="txtChars">Characters</span>
+                            <span id="txt-char-count" class="stat-count">0</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label" data-i18n="txtSentences">Sentences</span>
+                            <span id="txt-sentence-count" class="stat-count">0</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label" data-i18n="txtParagraphs">Paragraphs</span>
+                            <span id="txt-paragraph-count" class="stat-count">0</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label" data-i18n="txtReadTime">Read Time</span>
+                            <span id="txt-read-time" class="stat-count">0m</span>
+                        </div>
+                    </div>
+
+                    <!-- Operation controls -->
+                    <div class="text-controls-grid">
+                        <div class="case-buttons">
+                            <button id="txt-upper-btn" class="btn btn-secondary" data-i18n="txtUpperBtn">UPPERCASE</button>
+                            <button id="txt-lower-btn" class="btn btn-secondary" data-i18n="txtLowerBtn">lowercase</button>
+                            <button id="txt-title-btn" class="btn btn-secondary" data-i18n="txtTitleBtn">Title Case</button>
+                            <button id="txt-sentence-btn" class="btn btn-secondary" data-i18n="txtSentenceBtn">Sentence Case</button>
+                        </div>
+                        <div class="action-buttons">
+                            <button id="txt-copy-btn" class="btn btn-gradient">
+                                <span id="txt-copy-text" data-i18n="copy">Copy</span>
+                            </button>
+                            <button id="txt-clear-btn" class="btn btn-danger" data-i18n="txtClearBtn">Clear</button>
+                        </div>
+                    </div>
+
+                    <!-- Divider -->
+                    <hr class="separator-line">
+
+                    <!-- Text Repeater Settings -->
+                    <div class="text-repeater-container">
+                        <h3 class="repeater-title" data-i18n="txtRepeaterHeader">Text Repeater Options</h3>
+                        
+                        <div class="repeater-inputs-grid">
+                            <div class="control-group">
+                                <label for="txt-repeat-count" class="control-label" data-i18n="txtRepeatTimes">Repeat count</label>
+                                <input type="number" id="txt-repeat-count" min="1" max="10000" value="10">
+                            </div>
+
+                            <div class="control-group">
+                                <label for="txt-repeat-separator" class="control-label" data-i18n="txtRepeatSeparator">Separator</label>
+                                <div class="select-wrapper">
+                                    <select id="txt-repeat-separator">
+                                        <option value="space" data-i18n="txtSepSpace">Space</option>
+                                        <option value="newline" data-i18n="txtSepNewline">New Line</option>
+                                        <option value="none" data-i18n="txtSepNone">None</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button id="txt-repeat-btn" class="btn btn-primary" data-i18n="txtRepeatBtn">Generate & Repeat Text</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= QR CODE GENERATOR PAGE ================= -->
+        <section id="page-qrcode" class="page-section">
+            <button class="btn btn-secondary back-btn" data-i18n="backToHome">← Back to Home</button>
+            <div class="tool-container">
+                <div class="tool-header">
+                    <h1 class="gradient-text" data-i18n="qrTitle">QR Code Generator</h1>
+                    <p class="tool-subtitle" data-i18n="qrDesc">Generate high-quality custom QR codes for URLs, text messages, or WiFi networks instantly.</p>
+                </div>
+
+                <div class="tool-body qrcode-body">
+                    <div class="qrcode-workspace">
+                        <!-- Settings Panel -->
+                        <div class="qrcode-settings-panel">
+                            <!-- QR Type Selector -->
+                            <div class="control-group">
+                                <label class="control-label" data-i18n="qrType">Data Type</label>
+                                <div class="qr-type-buttons">
+                                    <button type="button" class="btn btn-secondary active" id="qr-type-text-btn" data-type="text" data-i18n="qrTypeText">Text / URL</button>
+                                    <button type="button" class="btn btn-secondary" id="qr-type-wifi-btn" data-type="wifi" data-i18n="qrTypeWifi">WiFi Network</button>
+                                </div>
+                            </div>
+
+                            <!-- Raw Text / URL Input -->
+                            <div id="qr-input-text-group" class="control-group">
+                                <label for="qr-text" class="control-label" data-i18n="qrTextLabel">Text or URL</label>
+                                <input type="text" id="qr-text" placeholder="Enter link or text here..." data-i18n-placeholder="qrTextPlaceholder" value="https://google.com">
+                            </div>
+
+                            <!-- WiFi Inputs -->
+                            <div id="qr-input-wifi-group" class="control-group hide">
+                                <div class="wifi-fields">
+                                    <div class="control-group">
+                                        <label for="qr-wifi-ssid" class="control-label" data-i18n="qrWifiSsid">Network SSID</label>
+                                        <input type="text" id="qr-wifi-ssid" placeholder="My WiFi Network" value="">
+                                    </div>
+                                    <div class="control-group">
+                                        <label for="qr-wifi-password" class="control-label" data-i18n="qrWifiPassword">Password</label>
+                                        <input type="text" id="qr-wifi-password" placeholder="WPA/WEP Password" value="">
+                                    </div>
+                                    <div class="control-group">
+                                        <label for="qr-wifi-encryption" class="control-label" data-i18n="qrWifiSecurity">Security Type</label>
+                                        <div class="select-wrapper">
+                                            <select id="qr-wifi-encryption">
+                                                <option value="WPA">WPA/WPA2</option>
+                                                <option value="WEP">WEP</option>
+                                                <option value="nopass">Unsecured (None)</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button id="qr-generate-btn" class="btn btn-gradient btn-full" data-i18n="qrGenerateBtn">Generate QR Code</button>
+                        </div>
+
+                        <!-- Output Panel -->
+                        <div class="qrcode-output-panel">
+                            <div class="qr-code-box">
+                                <div id="qr-code-display">
+                                    <!-- Dynamic QR Image rendered here -->
+                                    <img id="qr-image" src="" alt="QR Code Output" class="hide">
+                                    <div id="qr-placeholder-text" class="qr-placeholder" data-i18n="qrPlaceholder">Press Generate to create QR Code</div>
+                                </div>
+                            </div>
+                            <button id="qr-download-btn" class="btn btn-success btn-full hide" data-i18n="qrDownloadBtn">Download QR Code (PNG)</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= DEVELOPER UTILITIES PAGE ================= -->
+        <section id="page-devtools" class="page-section">
+            <button class="btn btn-secondary back-btn" data-i18n="backToHome">← Back to Home</button>
+            <div class="tool-container">
+                <div class="tool-header">
+                    <h1 class="gradient-text" data-i18n="devToolsTitle">Developer Utilities</h1>
+                    <p class="tool-subtitle" data-i18n="devToolsDesc">Encode and decode Base64 strings, or escape and unescape URLs quickly and securely.</p>
+                </div>
+
+                <div class="tool-body devtools-body">
+                    <div class="devtools-workspace">
+                        <!-- Settings Panel -->
+                        <div class="qrcode-settings-panel devtools-settings-panel">
+                            <!-- Dev Tool Tab Selector -->
+                            <div class="control-group">
+                                <label class="control-label" data-i18n="devToolType">Select Tool</label>
+                                <div class="qr-type-buttons dev-type-buttons">
+                                    <button type="button" class="btn btn-secondary active" id="dev-type-base64-btn" data-type="base64" data-i18n="devTypeBase64">Base64</button>
+                                    <button type="button" class="btn btn-secondary" id="dev-type-url-btn" data-type="url" data-i18n="devTypeUrl">URL Encode</button>
+                                </div>
+                            </div>
+
+                            <!-- Input Box -->
+                            <div class="control-group">
+                                <label for="dev-input" class="control-label" data-i18n="devInputLabel">Input Text</label>
+                                <textarea id="dev-input" placeholder="Type or paste code here..." data-i18n-placeholder="devInputPlaceholder" rows="5"></textarea>
+                            </div>
+
+                            <div class="action-buttons" style="width: 100%;">
+                                <button id="dev-encode-btn" class="btn btn-gradient" style="flex: 1;" data-i18n="devEncodeBtn">Encode</button>
+                                <button id="dev-decode-btn" class="btn btn-secondary" style="flex: 1;" data-i18n="devDecodeBtn">Decode</button>
+                            </div>
+                        </div>
+
+                        <!-- Output Panel -->
+                        <div class="qrcode-output-panel devtools-output-panel" style="width: 100%;">
+                            <div class="control-group" style="width: 100%;">
+                                <label for="dev-output" class="control-label" data-i18n="devOutputLabel">Output Result</label>
+                                <textarea id="dev-output" readonly placeholder="Output will appear here..." data-i18n-placeholder="devOutputPlaceholder" rows="7" style="width: 100%; background: rgba(0, 0, 0, 0.12); border: 1px solid var(--glass-border); border-radius: var(--radius-lg); padding: 1.2rem; color: var(--text-primary); font-family: monospace; outline: none; resize: vertical;"></textarea>
+                            </div>
+                            <div class="action-buttons" style="width: 100%;">
+                                <button id="dev-copy-btn" class="btn btn-success" style="flex: 1;">
+                                    <span id="dev-copy-text" data-i18n="copy">Copy</span>
+                                </button>
+                                <button id="dev-clear-btn" class="btn btn-danger" style="flex: 1;" data-i18n="txtClearBtn">Clear</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <p data-i18n="footerText">© 2026 MultiTools Hub. All processing happens locally in your browser for absolute security.</p>
+        </div>
+    </footer>
+
+    <!-- Toast Notification Container -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- Core Module Script -->
+    <script type="module" src="js/main.js"></script>
 </body>
 </html>
