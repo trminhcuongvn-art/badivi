@@ -4,17 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-i18n="metaTitle">MultiTools Hub - Free Multilingual Online Web Utilities</title>
-    <meta name="description" content="Free online tools to download TikTok videos, compress images, generate secure passwords, and convert text case. Multilingual and secure client-side tools." data-i18n-content="metaDesc">
+    <meta name="description" content="BaDiVi provides practical browser-based utility tools for B2B packaging teams: TikTok downloader, image compressor, password generator, text tools, QR codes, and developer utilities." data-i18n-content="metaDesc">
+    <meta property="og:title" content="BaDiVi — practical B2B packaging utility tools">
+    <meta property="og:description" content="Clean, secure utility tools for tape and shrinkwrap product workflows. Runs in your browser with no registration.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/hero.png">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap&subset=vietnamese" rel="stylesheet">
     
     <!-- Main Style -->
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- International SEO GEO (Hreflang tags) -->
+    <!-- SEO localization links -->
     <!-- NOTE: Replace 'https://multitoolshub.com' with your actual domain when deployed -->
     <link rel="alternate" hreflang="x-default" href="https://multitoolshub.com/" />
     <link rel="alternate" hreflang="en" href="https://multitoolshub.com/?lang=en" />
@@ -41,11 +45,7 @@
     }
     </script>
 </head>
-<body class="dark-mode">
-    <div class="background-glows">
-        <div class="glow glow-1"></div>
-        <div class="glow glow-2"></div>
-    </div>
+<body class="light-mode">
 
     <!-- Header Navigation -->
     <header class="glass-nav">
@@ -96,7 +96,7 @@
         <!-- ================= HOME PAGE ================= -->
         <section id="page-home" class="page-section active">
             <div class="hero-section">
-                <h1 class="gradient-text hero-title" data-i18n="heroTitle">Sleek, Fast & Free Online Tools</h1>
+                <h1 class="hero-title" data-i18n="heroTitle">Sleek, Fast & Free Online Tools</h1>
                 <p class="hero-desc" data-i18n="heroDesc">No installations, no registration, no tracking. Fast tools designed to save you time every day, running completely in your browser.</p>
                 <div class="search-bar-container">
                     <div class="search-input-wrapper">
@@ -189,7 +189,7 @@
             <button class="btn btn-secondary back-btn" data-i18n="backToHome">← Back to Home</button>
             <div class="tool-container">
                 <div class="tool-header">
-                    <h1 class="gradient-text" data-i18n="tiktokTitle">TikTok Video Downloader</h1>
+                    <h1  data-i18n="tiktokTitle">TikTok Video Downloader</h1>
                     <p class="tool-subtitle" data-i18n="tiktokDesc">Download TikTok videos without watermark in high quality (MP4) and extract MP3 audio files instantly.</p>
                 </div>
                 
@@ -197,7 +197,7 @@
                     <form id="tiktok-form" class="url-form">
                         <div class="input-wrapper">
                             <input type="url" id="tiktok-url" placeholder="Paste TikTok video link here..." data-i18n-placeholder="tiktokPlaceholder" required autocomplete="off">
-                            <button type="submit" class="btn btn-gradient" id="tiktok-submit-btn" data-i18n="tiktokFetchBtn">Get Download Links</button>
+                            <button type="submit" class="btn btn-primary" id="tiktok-submit-btn" data-i18n="tiktokFetchBtn">Get Download Links</button>
                         </div>
                         <div id="tiktok-error" class="error-msg hide"></div>
                     </form>
@@ -236,7 +236,7 @@
             <button class="btn btn-secondary back-btn" data-i18n="backToHome">← Back to Home</button>
             <div class="tool-container">
                 <div class="tool-header">
-                    <h1 class="gradient-text" data-i18n="imageTitle">Image Compressor & WebP Converter</h1>
+                    <h1  data-i18n="imageTitle">Image Compressor & WebP Converter</h1>
                     <p class="tool-subtitle" data-i18n="imageDesc">Compress PNG, JPG, or WebP images locally to reduce file size up to 90% without losing quality.</p>
                 </div>
 
@@ -293,7 +293,7 @@
                                 </div>
                             </div>
 
-                            <button id="img-download-btn" class="btn btn-gradient btn-full" data-i18n="imgDownload">Download Image</button>
+                            <button id="img-download-btn" class="btn btn-primary btn-full" data-i18n="imgDownload">Download Image</button>
                         </div>
                     </div>
                 </div>
@@ -305,7 +305,7 @@
             <button class="btn btn-secondary back-btn" data-i18n="backToHome">← Back to Home</button>
             <div class="tool-container">
                 <div class="tool-header">
-                    <h1 class="gradient-text" data-i18n="passwordTitle">Secure Password Generator</h1>
+                    <h1  data-i18n="passwordTitle">Secure Password Generator</h1>
                     <p class="tool-subtitle" data-i18n="passwordDesc">Create cryptographically secure, random passwords with customizable lengths and rules.</p>
                 </div>
 
@@ -313,7 +313,7 @@
                     <!-- Password Output Box -->
                     <div class="password-output-wrapper">
                         <input type="text" id="pwd-output" readonly placeholder="Generated Password" data-i18n-placeholder="pwdGenerateBtn">
-                        <button class="btn btn-gradient" id="pwd-copy-btn">
+                        <button class="btn btn-primary" id="pwd-copy-btn">
                             <span id="pwd-copy-text" data-i18n="copy">Copy</span>
                         </button>
                     </div>
@@ -375,7 +375,7 @@
             <button class="btn btn-secondary back-btn" data-i18n="backToHome">← Back to Home</button>
             <div class="tool-container">
                 <div class="tool-header">
-                    <h1 class="gradient-text" data-i18n="textTitle">Text Case Converter & Repeater</h1>
+                    <h1  data-i18n="textTitle">Text Case Converter & Repeater</h1>
                     <p class="tool-subtitle" data-i18n="textDesc">Quickly convert text cases (UPPER, lower, Title) and multiply or repeat text with custom separators.</p>
                 </div>
 
@@ -418,7 +418,7 @@
                             <button id="txt-sentence-btn" class="btn btn-secondary" data-i18n="txtSentenceBtn">Sentence Case</button>
                         </div>
                         <div class="action-buttons">
-                            <button id="txt-copy-btn" class="btn btn-gradient">
+                            <button id="txt-copy-btn" class="btn btn-primary">
                                 <span id="txt-copy-text" data-i18n="copy">Copy</span>
                             </button>
                             <button id="txt-clear-btn" class="btn btn-danger" data-i18n="txtClearBtn">Clear</button>
@@ -461,7 +461,7 @@
             <button class="btn btn-secondary back-btn" data-i18n="backToHome">← Back to Home</button>
             <div class="tool-container">
                 <div class="tool-header">
-                    <h1 class="gradient-text" data-i18n="qrTitle">QR Code Generator</h1>
+                    <h1  data-i18n="qrTitle">QR Code Generator</h1>
                     <p class="tool-subtitle" data-i18n="qrDesc">Generate high-quality custom QR codes for URLs, text messages, or WiFi networks instantly.</p>
                 </div>
 
@@ -508,7 +508,7 @@
                                 </div>
                             </div>
 
-                            <button id="qr-generate-btn" class="btn btn-gradient btn-full" data-i18n="qrGenerateBtn">Generate QR Code</button>
+                            <button id="qr-generate-btn" class="btn btn-primary btn-full" data-i18n="qrGenerateBtn">Generate QR Code</button>
                         </div>
 
                         <!-- Output Panel -->
@@ -532,7 +532,7 @@
             <button class="btn btn-secondary back-btn" data-i18n="backToHome">← Back to Home</button>
             <div class="tool-container">
                 <div class="tool-header">
-                    <h1 class="gradient-text" data-i18n="devToolsTitle">Developer Utilities</h1>
+                    <h1  data-i18n="devToolsTitle">Developer Utilities</h1>
                     <p class="tool-subtitle" data-i18n="devToolsDesc">Encode and decode Base64 strings, or escape and unescape URLs quickly and securely.</p>
                 </div>
 
@@ -556,7 +556,7 @@
                             </div>
 
                             <div class="action-buttons" style="width: 100%;">
-                                <button id="dev-encode-btn" class="btn btn-gradient" style="flex: 1;" data-i18n="devEncodeBtn">Encode</button>
+                                <button id="dev-encode-btn" class="btn btn-primary" style="flex: 1;" data-i18n="devEncodeBtn">Encode</button>
                                 <button id="dev-decode-btn" class="btn btn-secondary" style="flex: 1;" data-i18n="devDecodeBtn">Decode</button>
                             </div>
                         </div>
